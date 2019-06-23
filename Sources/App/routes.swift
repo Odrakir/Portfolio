@@ -26,10 +26,6 @@ public func routes(_ router: Router) throws {
             Project(name: "Sincrolab", subtitle: "iPad prototypes", description: "Three games for kids with learning disabilities developed using Sprite Kit. It also features a tutor login where the tutor can track the kids' progress and taylor the game to their needs.", link: "https://www.sincrolab.es")
         ]
         
-        let experience = [
-            Experience(name: "", dates: "", description: "", link: "")
-        ]
-        
         let calendar = Calendar.current
         let year = calendar.component(.year, from: Date())
         
