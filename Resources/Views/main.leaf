@@ -1,4 +1,4 @@
-#set("title") { Hello, #(name)! }
+#set("title") { Ricardo Sánchez }
 
 #set("body") {
 	<div class="container">
