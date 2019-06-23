@@ -8,12 +8,8 @@ struct Context: Codable {
 
 /// Register your application's routes here.
 public func routes(_ router: Router) throws {
-    // Basic "It works" example
-    router.get { req in
-        return "It works!"
-    }
-    
-    router.get("main") { req -> Future<View> in
+        
+    router.get { req -> Future<View> in
         
         let projects = [
             Project(name: "Toggl", subtitle: "Cross platform app", description: "Time tracking application developed in Xamarin and C# for both Android and iOS. I mainly worked in the iOS and common parts of the codebase.", link: "https://github.com/toggl/mobileapp"),
