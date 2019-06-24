@@ -22,13 +22,9 @@ public func routes(_ router: Router) throws {
             Project(name: "Sincrolab", subtitle: "iPad prototypes", description: "Three games for kids with learning disabilities developed using Sprite Kit. It also features a tutor login where the tutor can track the kids' progress and taylor the game to their needs.", link: "https://www.sincrolab.es")
         ]
         
-        var dateComponents = DateComponents()
-        dateComponents.year = 2011
-        dateComponents.month = 7
-        dateComponents.day = 1
-        
-        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
-        let startDate = calendar.date(from: dateComponents)!
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let startDate = dateFormatter.date(from: "2011-07-01")!
 
         let context = Context(
             years: yearsOfExperience(since: startDate),
