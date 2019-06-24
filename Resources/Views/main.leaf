@@ -16,7 +16,7 @@
 				<p><strong>About</strong></p>
 			</div>
 			<div class="col-8">
-				<p>I'm a mobile sofware engineer. I've been developing iOS apps for the last #(context.years) years. I love Swift, functional programming, clean code and cool interfaces. Currently I work at <a href="http://www.toggl.com">Toggl</a> where I'm developing an app called <a href="https://superday.toggl.com">Superday</a>. I have a <a href="https://twitter.com/foolonhill">Twitter</a> account, where you can contact me. You can also check my CV at <a href="https://stackoverflow.com/story/ricardosanchez">StackOverflow</a> or <a href="https://www.linkedin.com/pub/ricardo-sánchez-sotres/3a/662/731">LinkedIn</a> and some of my code at <a href="https://github.com/Odrakir">GitHub</a>. If you are up for some technical reading, I've written a couple of things in <a href="https://medium.com/@foolonhill">Medium</a> as well.</p>
+				<p>I'm a mobile sofware engineer. I've been developing iOS apps for #(context.years) years. I love Swift, functional programming, clean code and cool interfaces. Currently I work at <a href="http://www.toggl.com">Toggl</a> where I'm developing an app called <a href="https://superday.toggl.com">Superday</a>. I have a <a href="https://twitter.com/foolonhill">Twitter</a> account, where you can contact me. You can also check my CV at <a href="https://stackoverflow.com/story/ricardosanchez">StackOverflow</a> or <a href="https://www.linkedin.com/pub/ricardo-sánchez-sotres/3a/662/731">LinkedIn</a> and some of my code at <a href="https://github.com/Odrakir">GitHub</a>. If you are up for some technical reading, I've written a couple of things in <a href="https://medium.com/@foolonhill">Medium</a> as well.</p>
 			</div>
 		</div>
 		<hr />

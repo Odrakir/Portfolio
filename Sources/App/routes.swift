@@ -22,22 +22,32 @@ public func routes(_ router: Router) throws {
             Project(name: "Sincrolab", subtitle: "iPad prototypes", description: "Three games for kids with learning disabilities developed using Sprite Kit. It also features a tutor login where the tutor can track the kids' progress and taylor the game to their needs.", link: "https://www.sincrolab.es")
         ]
         
-        let calendar = Calendar.current
-        let year = calendar.component(.year, from: Date())
+        var dateComponents = DateComponents()
+        dateComponents.year = 2011
+        dateComponents.month = 7
+        dateComponents.day = 1
         
+        let startDate = Calendar.current.date(from: dateComponents)!
+
         let context = Context(
-            years: String(year - 2011),
+            years: yearsOfExperience(since: startDate),
             projects: projects
         )
         
         return try req.view().render("main", ["context": context])
     }
+}
 
-    /*
-    // Example of configuring a controller
-    let todoController = TodoController()
-    router.get("todos", use: todoController.index)
-    router.post("todos", use: todoController.create)
-    router.delete("todos", Todo.parameter, use: todoController.delete)
-     */
+private func yearsOfExperience(since startDate: Date) -> String
+{
+    let components = Calendar.current.dateComponents([.year, .month], from: startDate, to: Date())
+    
+    switch components.month! {
+    case 0..<4:
+        return "a little bit over \(components.year!)"
+    case 10..<12:
+        return "almost \(components.year! + 1)"
+    default:
+        return "\(components.year!)"
+    }
 }
