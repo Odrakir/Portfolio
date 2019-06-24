@@ -27,7 +27,8 @@ public func routes(_ router: Router) throws {
         dateComponents.month = 7
         dateComponents.day = 1
         
-        let startDate = Calendar.current.date(from: dateComponents)!
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let startDate = calendar.date(from: dateComponents)!
 
         let context = Context(
             years: yearsOfExperience(since: startDate),
