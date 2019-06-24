@@ -21,20 +21,20 @@ public func routes(_ router: Router) throws {
             Project(name: "Dermomedia", subtitle: "iPad and iPhone app", description: "This app is targeted to medicine students who want to reinforce their knowledge of dermatological pathologies as well as helping doctor identify and track pathologies", link: "https://vimeo.com/156386805"),
             Project(name: "Sincrolab", subtitle: "iPad prototypes", description: "Three games for kids with learning disabilities developed using Sprite Kit. It also features a tutor login where the tutor can track the kids' progress and taylor the game to their needs.", link: "https://www.sincrolab.es")
         ]
-        
+        /*
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let startDate = dateFormatter.date(from: "2011-07-01")!
-
+*/
         let context = Context(
-            years: yearsOfExperience(since: startDate),
+            years: "8",
             projects: projects
         )
         
         return try req.view().render("main", ["context": context])
     }
 }
-
+/*
 private func yearsOfExperience(since startDate: Date) -> String
 {
     let components = Calendar.current.dateComponents([.year, .month], from: startDate, to: Date())
@@ -48,3 +48,4 @@ private func yearsOfExperience(since startDate: Date) -> String
         return "\(components.year!)"
     }
 }
+*/
